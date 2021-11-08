@@ -33,3 +33,7 @@ Route::resource('studentInfos', App\Http\Controllers\StudentInfoController::clas
 Route::resource('healthTrackers', App\Http\Controllers\HealthTrackerController::class);
 
 Route::resource('petShops', App\Http\Controllers\PetShopController::class);
+
+
+
+Route::resource('logs', App\Http\Controllers\LogsController::class);

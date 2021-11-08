@@ -19,4 +19,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('petshop-info',[PetShopControllerAPI::class,'index']);
+Route::post('login',[PetShopControllerAPI::class,'login']);
+Route::post('register',[PetShopControllerAPI::class,'register']);
+Route::post('reset-password',[PetShopControllerAPI::class,'resetPassword']);
